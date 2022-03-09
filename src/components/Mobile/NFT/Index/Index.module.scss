@@ -1,0 +1,49 @@
+@import "../../../../styles/abstract/mixins";
+
+.SearchAndTheme {
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  grid-column-gap: 1.6rem;
+
+  @include responde(small) {
+    margin-top: 2rem;
+  }
+}
+
+.Row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NFTs {
+  h4 {
+    margin-top: 2.4rem;
+    margin-bottom: 1.9rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+}
+
+.Light {
+  h4 {
+    color: #000;
+  }
+}
+
+.Projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+  & > :nth-child(even) {
+    justify-self: end;
+  }
+  & > :nth-child(odd) {
+    justify-self: start;
+  }
+}
+
+.NoProjectFound {
+  color: var(--color-primary);
+}

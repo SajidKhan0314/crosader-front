@@ -1,0 +1,77 @@
+@import "./styles/abstract/mixins";
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 2rem;
+  background-color: var(--color-secondary);
+  transition: background-color 1s;
+
+  @include responde(large) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  @include responde(small) {
+    padding: 0;
+  }
+}
+
+.Light {
+  background-color: var(--color-gray-light-1);
+
+  .LeftAbout,
+  .RightAbout {
+    color: var(--color-gray-light-6);
+  }
+}
+
+.LeftAbout,
+.RightAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 0 10%;
+  color: var(--color-gray-light-2);
+}
+
+.LeftAbout {
+  img {
+    width: 20rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  @include responde(large) {
+    display: none;
+  }
+}
+
+.RightAbout {
+  img {
+    width: 23rem;
+    margin-bottom: 2.3rem;
+  }
+  p {
+    width: 23rem;
+    text-align: start;
+  }
+
+  @include responde(large) {
+    display: none;
+  }
+}

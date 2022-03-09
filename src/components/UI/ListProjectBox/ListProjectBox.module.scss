@@ -1,0 +1,48 @@
+.ListProjectBox {
+  cursor: pointer;
+  width: 100%;
+
+  .ProjectImage {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+
+  .ProjectName {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: #fff;
+    width: 15rem;
+  }
+
+  .ProjectStatus {
+    margin-bottom: 0.3rem;
+  }
+
+  .ProjectStatus,
+  .ProjectDate {
+    width: 14rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-light-4);
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.35rem;
+    }
+  }
+}
+
+.Light {
+  .ProjectName {
+    color: #000;
+  }
+
+  .ProjectStatus,
+  .ProjectDate {
+    color: var(--color-gray-light-5);
+  }
+}

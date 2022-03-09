@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #6d28d9;
+  --color-primary-light-1: #ddd6fe;
+  --color-primary-light-2: #8b5cf6;
+  --color-secondary: #111827;
+
+  --color-gray-light-1: #f3f4f6;
+  --color-gray-light-2: #e5e7eb;
+  --color-gray-light-3: #d1d5db;
+  --color-gray-light-4: #9ca3af;
+  --color-gray-light-5: #6b7280;
+  --color-gray-light-6: #374151;
+  --color-gray-light-8: #1f2937;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  // @include responde(large) {
+  //   font-size: 50%;
+  // }
+
+  // @include responde(medium) {
+  //   font-size: 62.5%;
+  // }
+}
+
+body {
+  background-color: var(--color-gray-light-1);
+  font-family: Nunito;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+  background: var(--color-gray-light-3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  display: none;
+  background: var(--color-primary);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}

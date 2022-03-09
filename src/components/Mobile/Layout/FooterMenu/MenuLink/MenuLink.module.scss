@@ -1,0 +1,26 @@
+.Link,
+.ActiveLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+
+  svg {
+    margin-bottom: 1.1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.Light {
+  color: var(--color-gray-light-5);
+}
+
+.Dark {
+  color: var(--color-gray-light-4);
+}
+
+.ActiveLink {
+  color: var(--color-primary-light-2);
+}

@@ -1,0 +1,42 @@
+.SwipperProjectBox {
+  cursor: pointer;
+
+  .ProjectImage {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+
+  .ProjectName {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: #fff;
+    width: 15rem;
+  }
+
+  .ProjectStatus {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-light-4);
+    width: 14rem;
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.35rem;
+    }
+  }
+}
+
+.Light {
+  .ProjectName {
+    color: #000;
+  }
+
+  .ProjectStatus {
+    color: var(--color-gray-light-5);
+  }
+}

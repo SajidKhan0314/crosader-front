@@ -1,0 +1,8 @@
+.FooterMenu {
+  padding: 2rem 3.3rem;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+}

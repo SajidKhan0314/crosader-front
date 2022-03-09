@@ -1,0 +1,33 @@
+@import "../../../../styles/abstract/mixins";
+
+.SearchAndTheme {
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  grid-column-gap: 1.6rem;
+
+  @include responde(small) {
+    margin-top: 2rem;
+  }
+}
+
+.FilterButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-gray-light-3);
+}
+
+.Heading {
+  margin: 2.4rem 0;
+  color: #fff;
+}
+
+.Light {
+  .Heading {
+    color: var(--color-gray-light-8);
+  }
+
+  .FilterButton {
+    color: var(--color-gray-light-6);
+  }
+}
